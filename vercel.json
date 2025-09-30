@@ -1,13 +1,13 @@
 {
-    "builds":[{
+    "builds": [{
         "src": "TODO/wsgi.py",
-        "use":"@vercel/python",
-        "config":{ "maxLambdaSize": "15mb", "runtime": "python3.9"}
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
     }],
-    "routes":[
+    "routes": [
         {
-            "src":"/(.*)",
-            "dest":"TODO/wsgi.py"
+            "src": "/(.*)",
+            "dest": "TODO/wsgi.py"
         }
     ]
 }
